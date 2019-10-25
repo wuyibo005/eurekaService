@@ -5,7 +5,7 @@
 #COPY ./target/service-mall.jar app.jar
 #CMD ["/docker-entrypoint.sh"]
 
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM 100007533986/alpine-oraclejdk8:slim
 ADD target/eurekaService-1.0-SNAPSHOT.jar /app.jar
 RUN sh -c 'touch /app.jar'
 ENV JAVA_OPTS=""
